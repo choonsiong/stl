@@ -1,6 +1,6 @@
 # STL
 
-A simple demo project that provides web API to read STL file from a directory and save the STL data into a database.
+A simple demo project that provides web API to read [STL format](https://en.wikipedia.org/wiki/STL_(file_format)) file from a directory and save the STL data into a database.
 
 Endpoints:
 
