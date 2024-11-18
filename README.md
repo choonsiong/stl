@@ -17,4 +17,4 @@ Use below command to start up a MongoDB container:
 
 `docker run --name mongodb -v "$DOCKER_MONGODB_DATA:/data/db" --publish 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=password -d mongo:latest`
 
-Above command assume the environment variable `DOCKER_MONGODB_DATA` exists, else create a directory somewhere and add the environment variable (`DOCKER_MONGODB_DATA=/path/to/local/directory`) to your shell startup script (e.g., `.bashrc`, `.zshrc`).
+Above command assume the environment variable `DOCKER_MONGODB_DATA` exists, else create a directory somewhere and add the environment variable (e.g., `DOCKER_MONGODB_DATA=/path/to/your/local/directory`) to your shell startup script (e.g., `.bashrc`, `.zshrc`).
