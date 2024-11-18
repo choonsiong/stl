@@ -22,7 +22,7 @@ Above command assume the environment variable `DOCKER_MONGODB_DATA` exists, else
 To create the executable, run `make all`:
 ```
 $ make all
-rm -f server
-go build -o server .
+rm -f stl-server
+go build -o stl-server .
 $ 
 ```

@@ -1,5 +1,5 @@
 all: clean
-	go build -o server .
+	go build -o stl-server .
 
 clean:
-	rm -f server
+	rm -f stl-server
