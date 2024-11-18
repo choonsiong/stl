@@ -12,3 +12,9 @@ Endpoints:
   - body: `{"name":"Demo.STL"}`
 - `POST /query-stl-mongo`
   - body: `{"name":"Demo.STL"}`
+
+Use below command to start up a MongoDB container:
+
+`docker run --name mongodb -v "$DOCKER_MONGODB_DATA:/data/db" --publish 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=password -d mongo:latest`
+
+Above command assume the environment variable `DOCKER_MONGODB_DATA` exists, else create a directory somewhere and add the environment variable to your shell startup script (e.g., `.bashrc`, `.zshrc`).
