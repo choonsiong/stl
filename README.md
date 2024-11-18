@@ -26,3 +26,38 @@ rm -f stl-server
 go build -o stl-server .
 $ 
 ```
+
+To access MongoDB shell:
+
+```
+$ docker exec -it mongodb bash
+root@eb756328a645:/# 
+root@eb756328a645:/# 
+root@eb756328a645:/# mongosh -u mongoadmin
+Enter password: ********
+Current Mongosh Log ID:	673b53c53eecb762966b5ba4
+Connecting to:		mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.1.1
+Using MongoDB:		7.0.5
+Using Mongosh:		2.1.1
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2024-11-18T14:48:16.871+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+   2024-11-18T14:48:16.871+00:00: vm.max_map_count is too low
+------
+
+test> 
+
+test> show dbs
+STL       2.26 MiB
+admin   148.00 KiB
+config   48.00 KiB
+local    72.00 KiB
+test> use STL
+switched to db STL
+STL> show collections
+Binary
+STL> 
+```
