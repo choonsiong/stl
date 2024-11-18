@@ -11,3 +11,4 @@ Endpoints:
 - `POST /save-stl-mongo`
   - body: `{"name":"Demo.STL"}`
 - `POST /query-stl-mongo`
+  - body: `{"name":"Demo.STL"}`
