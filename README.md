@@ -7,5 +7,7 @@ Endpoints:
 - `GET /`
 - `GET /ping`
 - `POST /get-stl-list`
+  - result: `{"stl_list":["Demo.STL"]}`
 - `POST /save-stl-mongo`
+  - body: `{"name":"Demo.STL"}`
 - `POST /query-stl-mongo`
