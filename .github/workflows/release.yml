@@ -1,0 +1,25 @@
+name: release
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+  version: 0.0.1
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: build
+        run: |
+          make all
+          tar -czf stl-linux-x64-${{ env.version }}.tar.gz stl-server
+      - name: release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ secrets.DEVOPS_TOKEN }}
+          tag_name: ${{ env.version }}
+          name: release ${{ env.version }}
+          files: stl-linux-x64-${{ env.version }}.tar.gz
