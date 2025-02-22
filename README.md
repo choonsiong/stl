@@ -65,3 +65,7 @@ STL> show collections
 Binary
 STL> 
 ```
+
+# Credits
+
+The code is a sample project from [《Go 语言，从入门到项目实践》by 刘瑜，萧文翰，董树南](https://www.qidian.com/book/1037379769/).
