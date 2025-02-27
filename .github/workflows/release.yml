@@ -5,7 +5,7 @@ on:
       - '*'
 
 env:
-  version: 0.0.4
+  version: 0.0.5
 jobs:
   release:
     runs-on: ubuntu-latest
